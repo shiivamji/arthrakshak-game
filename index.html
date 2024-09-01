@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthrakshak Owl Game</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #E7B037; /* Background color of the website */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .logo {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust for proper centering */
+            height: 400px; /* Match the height of the canvas */
+            width: auto; /* Maintain aspect ratio */
+        }
+        #logo-left {
+            left: 0;
+        }
+        #logo-right {
+            right: 0;
+        }
+        #game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 20px auto;
+        }
+        canvas {
+            background-color: #ffffff; /* Background color of the game */
+            border: 2px solid black; /* Optional: Add border to the game canvas */
+        }
+        h1 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arthrakshak Owl Game</h1>
+    <div id="game-container">
+        <img id="logo-left" class="logo" src="logo.png" alt="Arthrakshak Logo"> <!-- Left logo -->
+        <canvas id="gameCanvas" width="500" height="400"></canvas>
+        <img id="logo-right" class="logo" src="logo.png" alt="Arthrakshak Logo"> <!-- Right logo -->
+    </div>
+    <p>Score: <span id="score">0</span></p>
+    <p>High Score: <span id="highScore">0</span></p>
+    <script src="game.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
